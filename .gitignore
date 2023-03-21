@@ -6,3 +6,6 @@
 !*.cpp
 !*.h
 !.gitignore
+
+!/doubly-linked-list
+!/adt-stack
