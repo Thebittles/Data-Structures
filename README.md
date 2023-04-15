@@ -94,3 +94,30 @@ For each of the above methods, there is a corresponding private overload method 
 
 
 ------------------
+
+
+## 6. Queue - FIFO (First-In-First-Out)
+
+This is an implementation of the Queue First-In-First-Out (FIFO) data structure using a doubly-linked list in C++.
+To use the FIFO data structure in your C++ program, include the "FIFO.h" header file and create a new instance of the FIFO class. Then, use the push, pull, peek, and isEmpty functions to add, remove, and access elements in the FIFO queue.
+
+- `Data struct` - This struct contains an integer id and a string data.
+
+- `Node struct` - This struct contains a Data struct and pointers to the next and previous nodes in the doubly-linked list.
+
+ Features the FIFO class contains the following functions:
+
+- `FIFO()`: The constructor initializes an empty FIFO queue.
+- `~FIFO()`: The destructor frees the memory used by the FIFO queue.
+- `bool push(int id, string* data)`: Adds an element to the end of the queue. Takes two arguments - an integer id and a pointer to a string data. Returns true if the element is successfully added and false otherwise.
+- `bool pull(Data*)`: Removes and returns the first element in the queue. Takes a pointer to a Data struct as an argument, which will be populated with the id and data of the removed element. Returns true if an element was successfully removed and false otherwise.
+- `bool peek(Data*)`: Returns the first element in the queue without removing it. Takes a pointer to a Data struct as an argument, which will be populated with the id and data of the first element. Returns true if an element was successfully retrieved and false otherwise.
+- `bool isEmpty()`: Returns a boolean indicating whether the FIFO queue is empty or not.
+
+The FIFO class also contains the following private variables:
+ 
+ - `head` - A pointer to the first node in the doubly-linked list.
+ - `tail` - A pointer to the last node in the doubly-linked list.
+
+
+
